@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --theme-color: #00bfff;
+}
+.container{
+    display: flex;
+}
+.container nav{
+    width: 20%;
+    height: 100vh;
+    background-color: var(--theme-color);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 2px;
+}
+.nav-heading, .nav-option{
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", serif;
+    transition: 0.3s;
+}
+.nav-icon, .nav-heading-icon{
+    padding: 10px;
+}
+.nav-heading-icon{
+    width: 45px;
+    height: 45px;
+}
+.nav-icon{
+    width: 25px;
+    height: 25px;   
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.nav-text{
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-option:hover{
+    background-color: #038cb9;
+    border-radius: 5px;
+}
