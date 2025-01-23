@@ -156,3 +156,53 @@ nav a{
     background-color: #038cb9;
     cursor: pointer;
 }
+
+main{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;   
+    height: 100vh ;
+    overflow: scroll;
+}
+.Projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 70%;
+}
+.Projects .project{
+    box-sizing: border-box;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 5px solid var(--theme-color);
+}
+.Projects .project .project-heading{
+    font-family: "Roboto", serif;
+    font-size: 25px;
+}
+
+main aside{
+    width: 30%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2px;
+}
+.Announcements{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 5px solid var(--theme-color);
+}
