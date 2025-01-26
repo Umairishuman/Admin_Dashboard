@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --theme-color: #00bfff;
+    --my-font: "Roboto", serif;
 }
 *{
     margin: 0;
@@ -23,7 +24,7 @@
 .nav-heading, .nav-option{
     display: flex;
     align-items: center;
-    font-family: "Roboto", serif;
+    font-family: var(--my-font);
     transition: 0.3s;
 }
 .nav-icon, .nav-heading-icon{
@@ -122,7 +123,7 @@ nav a{
     align-items: center;
 }
 .lower .name .name-name{
-    font-family: "Roboto", serif;
+    font-family: var(--my-font);
     font-size: 20px;
     font-weight: 500;
     display: flex;
@@ -148,7 +149,7 @@ nav a{
     font-size: 14px;
     color: white;
     font-weight: bold;
-    font-family: "Roboto", serif;
+    font-family: var(--my-font);
     font-weight: 500;
     transition: 0.4s;
 }
@@ -182,7 +183,7 @@ main{
     border-left: 5px solid var(--theme-color);
 }
 .Projects .project .project-heading{
-    font-family: "Roboto", serif;
+    font-family: var(--my-font);
     font-size: 25px;
 }
 
@@ -190,13 +191,15 @@ main aside{
     width: 30%;
     height: 100vh;
     box-sizing: border-box;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 2px;
+    padding: 0px 10px;
+    overflow: scroll;
 }
-.Announcements{
+.Announcements, .Trendings{
+    margin: 0px 0px 10px 0px;
     background-color: white;
     padding: 15px;
     border-radius: 10px;
@@ -205,4 +208,27 @@ main aside{
     flex-direction: column;
     justify-content: space-between;
     border-left: 5px solid var(--theme-color);
+    box-sizing: border-box;
+}
+.Announcements .announce{
+    padding: 10px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.Announcements .announce .announce-head{
+    font-family: "Roboto" , serif;
+    font-size: 20px;
+}
+.Trendings .trending img{
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.Trendings .trending {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.Trendings .trending p{
+    
 }
